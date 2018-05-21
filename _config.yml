@@ -7,8 +7,8 @@ defaultlang: "en"
 title: VubbiScript
 description: VubbiScript is a plugin for Unity3D aimed at kids which allows you to do visual programming in Unity3D.
 logo: /assets/img/Logo.png
-#webmaster_verifications:
-#  google: 
+webmaster_verifications:
+  google: 27ypTs7dWpOPW8VwESOh5thv8VVh1OcQwpN07rALTWQ
 lang: en
 
 # THEME-SPECIFIC CONFIGURATION
