@@ -31,7 +31,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: GTM-56V3N2P
-  google_analytics_track_domain: VubbiScript.github.io
+  google_analytics_track_domain: vubbiscript.github.io # Always lowercase!
   google_analytics_dev_cookie: VUBBISCRIPTGITHUBIODEVCOOKIE=IAMDEV
   google_analytics_dev_debug_tracking: false
   disqus_shortname:
