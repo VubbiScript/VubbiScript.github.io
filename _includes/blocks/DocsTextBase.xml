@@ -1,0 +1,21 @@
+{% capture blockcontent1 %}
+<block_set><instance x="475" y="115"><block type="text" id="~sF1EH,G)o.qq6jMdal)"><field name="TEXT"></field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="472" y="174"><block type="unityText_join" id="x4uu`YMJKiJ@SmjxSz_z"><mutation items="2"></mutation><value name="ADD0"><block type="text" id="+ujgB/(uIDi5D75qi`ah"><field name="TEXT">Score: </field></block></value><value name="ADD1"><block type="math_number" id="]171ig^x5;0;IO8ypS~t"><field name="NUM">10</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="472" y="256"><block type="unityText_append" id="~i=M^lH[^p3=)gLzSO7U"><field name="VAR"></field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-text {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="~sF1EH,G)o.qq6jMdal)" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="x4uu`YMJKiJ@SmjxSz_z" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="~i=M^lH[^p3=)gLzSO7U" blockcontent=blockcontent3 %}
+</div>
+</div>

@@ -1,0 +1,29 @@
+{% capture var__strvarname %}{{ include.strvarname | default: "var__strvarname"}}{% endcapture %}
+{% capture var__numvarname %}{{ include.numvarname | default: "var__numvarname"}}{% endcapture %}
+{% capture blockcontent1 %}
+<block_set><instance x="234" y="174"><block type="variables_set" id="LQHh~c-!@f+h@=/=BDHx"><mutation datatype="String"></mutation><field name="VAR">{{ var__strvarname }}</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="239" y="219"><block type="variables_get" id="b,xw^Hr=|mLhN|C=lx8l"><mutation datatype="String"></mutation><field name="VAR">{{ var__strvarname }}</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="235" y="268"><block type="variables_set" id="I+:KWhMM.u7l{B8]zD|`"><mutation datatype="Number"></mutation><field name="VAR">{{ var__numvarname }}</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent4 %}
+<block_set><instance x="239" y="317"><block type="variables_get" id="@NoRU9cf2bI1~yWi6m1}"><mutation datatype="Number"></mutation><field name="VAR">{{ var__numvarname }}</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-memory {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="LQHh~c-!@f+h@=/=BDHx" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="b,xw^Hr=|mLhN|C=lx8l" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="I+:KWhMM.u7l{B8]zD|`" blockcontent=blockcontent3 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="@NoRU9cf2bI1~yWi6m1}" blockcontent=blockcontent4 %}
+</div>
+</div>

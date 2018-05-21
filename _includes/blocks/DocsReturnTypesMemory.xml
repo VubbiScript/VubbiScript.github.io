@@ -1,0 +1,21 @@
+{% capture var__varname %}{{ include.varname | default: "var__varname"}}{% endcapture %}
+{% capture var__text %}{{ include.text | default: "var__text"}}{% endcapture %}
+{% capture blockcontent %}
+<block_set>
+  <instance x="446" y="15"><!-- <block type="unityControls_classConfig" id="OgsYRnfi~jn0J,8=tB+/" intask="true" deletable="false"><mutation declare="true"></mutation><statement name="ST"> -->
+    {% if include.type == 'Number' %}     <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="Number"></mutation>     <field name="VAR">{{ var__varname }}</field><field name="TYPE">Number</field>   <field name="NUM">0</field></block>{% endif %}
+    {% if include.type == 'Boolean' %}    <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="Boolean"></mutation>    <field name="VAR">{{ var__varname }}</field><field name="TYPE">Boolean</field>  <field name="BOOL">TRUE</field></block>{% endif %}
+    {% if include.type == 'String' %}     <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="String"></mutation>     <field name="VAR">{{ var__varname }}</field><field name="TYPE">String</field>   <field name="TEXT">{{ var__text }}</field></block>{% endif %}
+    {% if include.type == 'GameObject' %} <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="GameObject"></mutation> <field name="VAR">{{ var__varname }}</field><field name="TYPE">GameObject</field>   </block>{% endif %}
+    {% if include.type == 'Vector3' %}    <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="Vector3"></mutation>    <field name="VAR">{{ var__varname }}</field><field name="TYPE">Vector3</field>  <field name="X">0</field><field name="Y">0</field><field name="Z">0</field></block>{% endif %}
+    {% if include.type == 'Quaternion' %} <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="Quaternion"></mutation> <field name="VAR">{{ var__varname }}</field><field name="TYPE">Quaternion</field>   </block>{% endif %}
+    {% if include.type == 'Sprite' %}     <block type="unityGlobalVariables_declare" id="hf,0,FOfSUkq1_7)h*v-" intask="true" deletable="false" movable="false"><mutation next="false" declaration_type="Sprite"></mutation>     <field name="VAR">{{ var__varname }}</field><field name="TYPE">Sprite</field>       </block>{% endif %}
+   <!-- </statement></block> --></instance>
+</block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-returntypes {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="hf,0,FOfSUkq1_7)h*v-" blockcontent=blockcontent %}
+</div>
+</div>

@@ -1,0 +1,89 @@
+.blocks-img {
+  padding:10px;
+  max-width:100%;
+  overflow:auto;
+}
+
+.blocks-section {
+  max-width:100%;
+  overflow:auto;
+  display:inline-block;
+}
+
+.blocks-section.blocks-align-inline {
+  vertical-align: -40%;
+  background-color: transparent;
+}
+
+.blocks-section.blocks-align-inline .blocks-img {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.blocks-section .blocks-img {
+  max-width:auto;
+  overflow:visible;
+}
+
+.blocks-events {
+  background-color: #fbddad;
+}
+
+.blocks-logic {
+  background-color: #f9cfb1;
+}
+
+.blocks-detect {
+  background-color: #ffcfe7;
+}
+
+.blocks-movement {
+  background-color: #bde9ee;
+}
+
+.blocks-vector {
+  background-color: #f9ecad;
+}
+
+.blocks-rotate {
+  background-color: #f299ef;
+}
+
+.blocks-math {
+  background-color: #99bdd4;
+}
+
+.blocks-objects {
+  background-color: #d2db9a;
+}
+
+.blocks-text {
+  background-color: #e3eba5;
+}
+
+.blocks-time {
+  background-color: #a0e9d5;
+}
+
+.blocks-other {
+  background-color: #bbc9f8;
+}
+
+.blocks-memory {
+  background-color: #d3cee3;
+}
+
+.blocks-more {
+  background-color: #c3e4f6;
+}
+
+.blocks-returntypes {
+  background-color: #eee;
+}
+
+
+// Fixup of read-only "custom code block"
+
+.blocklyCode {
+  font-size: 11pt;
+}

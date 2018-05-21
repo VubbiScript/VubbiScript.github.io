@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="196" y="398"><block type="unityrotate_looktowards" id="=[^U#_A`G(vrLb+^jU8H"><value name="STAYWHAT"><block type="unityVector_pick" id="HnG[Ww!l=bG/2l`j#?:k"><field name="OPTION">up</field></block></value><value name="POINTWHAT"><block type="unityVector_pick" id="OIW7Z-zP|wBA}9zth0f,"><field name="OPTION">right</field></block></value><value name="TOWARDS"><block type="unityTransform_position" id="PNj@PN=1pa}|{ki7|?c1"></block></value><value name="LOOKFROM"><block type="unityTransform_position" id="Vo9:feoV2O~Q]m#HS`06"><value name="WHO"><block type="unity_me" id="QQb96l}wG@KPOl)AlFvh"></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-rotate {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="=[^U#_A`G(vrLb+^jU8H" blockcontent=blockcontent %}
+</div>
+</div>

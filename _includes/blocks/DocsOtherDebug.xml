@@ -1,0 +1,16 @@
+{% capture var__debugmsg %}{{ include.debugmsg | default: "var__debugmsg"}}{% endcapture %}
+{% capture blockcontent1 %}
+<block_set><instance x="236" y="165"><block type="unityGeneral_log" id="aKzt}W_0tQqkIXpPD#o^"><value name="WHAT"><block type="text" id="|i9rHHHf`Kagn;pC5Vrn"><field name="TEXT">{{ var__debugmsg }}</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="236" y="219"><block type="unityGeneral_log" id="Q~YC%Kr3NI]-eN={e8Fv"><value name="WHAT"><block type="unityTransform_position" id="/d(rc:y]wDQfI4hkpW)H"><value name="WHO"><block type="unity_me" id="}E77d%kbcMj?p98_m%em"></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-other {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="aKzt}W_0tQqkIXpPD#o^" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="Q~YC%Kr3NI]-eN={e8Fv" blockcontent=blockcontent2 %}
+</div>
+</div>

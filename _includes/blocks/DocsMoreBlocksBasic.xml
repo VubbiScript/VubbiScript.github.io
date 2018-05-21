@@ -1,0 +1,17 @@
+{% capture var__actionname %}{{ include.actionname | default: "var__actionname"}}{% endcapture %}
+{% capture var__script %}{{ include.script | default: "var__script"}}{% endcapture %}
+{% capture blockcontent1 %}
+<block_set><instance x="235" y="119"><block type="unityCode_define" id="7X}A|AEEe6XT7:1{wPnB"><field name="NAME">{{ var__actionname }}</field><field name="CODE">{{ var__script }}</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="235" y="204"><block type="unityCode_use" id="Rz1(3S@(%Brm)w?(x.p%"><mutation tocall="{{ var__actionname }}"></mutation></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-more {{include.align}}">
+<div class="blocks-img">
+{% include blocks/hatblock.html blockid="7X}A|AEEe6XT7:1{wPnB" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="Rz1(3S@(%Brm)w?(x.p%" blockcontent=blockcontent2 %}
+</div>
+</div>

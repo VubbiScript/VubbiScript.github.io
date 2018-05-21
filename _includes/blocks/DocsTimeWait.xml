@@ -1,0 +1,15 @@
+{% capture blockcontent1 %}
+<block_set><instance x="467" y="116"><block type="unityTime_waitframe" id="ZbLF@:P{4Bky]5*ZH-wo"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="466" y="174"><block type="unityTime_waittime" id="(fo%ijHERoH3Vplvy`_X"><value name="TIME"><block type="math_number" id="L^s~@xtI2omYwl/_VWIL"><field name="NUM">1</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-time {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="ZbLF@:P{4Bky]5*ZH-wo" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="(fo%ijHERoH3Vplvy`_X" blockcontent=blockcontent2 %}
+</div>
+</div>

@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="234" y="113"><block type="unityrotate_apply_vector" id="e{#Q;Y}Oq)RdFOn4P/?N"><value name="VECTOR"><block type="unityVector_pick" id="#s.3|]7T(s{.gir|uN;C"><field name="OPTION">right</field></block></value><value name="QUATERNION"><block type="unityrotate_get_rotation" id="PcMfmbfKPBms3DCnLPOQ"><value name="WHO"><block type="unity_me" id="xhpd/=0vT1mU0Xr-9?s]"></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-vector {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="e{#Q;Y}Oq)RdFOn4P/?N" blockcontent=blockcontent %}
+</div>
+</div>

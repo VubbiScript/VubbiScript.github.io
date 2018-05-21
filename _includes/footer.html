@@ -1,0 +1,37 @@
+{%- comment %}
+ --
+ -- Find the language of the current page by looking at the path!
+ --
+{% endcomment -%}
+{%- assign curlang = site.defaultlang -%}
+{%- assign pathpieces = page.path | split: "/" -%}
+{%- if pathpieces[0] == '_pages' and (pathpieces | size) >= 3 -%}
+{%- assign curlang = pathpieces[1] -%}
+{%- endif %}
+
+<footer class="site-footer">
+    <p class="text">{{site.data.i18n[curlang].footer}}</p>
+    <p class="text">VubbiScript - <a href="{{site.baseurl}}/{{curlang}}/about">Jeroen Penninck</a> - 2018</p>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        {% include icons.html %}
+        </ul>
+    </div>
+    <p style="font-size: 9pt; margin-top: 70px;"><a href="{{site.baseurl}}/privacy">Privacy Policy</a></p>
+</footer>
+
+{% include vubbiappinit.html %}
+
+<script>
+/* Menu on smaller screens... */
+$(function () {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function (e) {
+        menu.slideToggle();
+    });
+});
+</script>

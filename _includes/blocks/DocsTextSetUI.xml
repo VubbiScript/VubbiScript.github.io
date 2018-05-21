@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="472" y="321"><block type="unityUI_text" id="|YoO^IJiJ-jTrUo:0r%b"><value name="WHO"><block type="unity_me" id="aiC19j*:n8[H.s:ix.tb"></block></value><value name="TEXT"><block type="text" id="UIVyMX8QmPm9v3Sq08[W"><field name="TEXT">Score: 0</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-text {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="|YoO^IJiJ-jTrUo:0r%b" blockcontent=blockcontent %}
+</div>
+</div>

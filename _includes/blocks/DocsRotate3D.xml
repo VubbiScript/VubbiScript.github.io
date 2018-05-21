@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="197" y="207"><block type="unityrotate_angleaxis" id="=YEZm@+mf0dv6](g|bTO"><value name="ANGLE"><block type="math_number" id="+e8j,j9d]xQBY5_;K{gO"><field name="NUM">90</field></block></value><value name="AXIS"><block type="unityVector_pick" id=".9l)@5:}m}Lg(s`X@MA,"><field name="OPTION">back</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-rotate {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="=YEZm@+mf0dv6](g|bTO" blockcontent=blockcontent %}
+</div>
+</div>

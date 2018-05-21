@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="198" y="111"><block type="unityrotate_identity" id="Ur3}2J!wZ8zusuGX?gLd"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-rotate {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="Ur3}2J!wZ8zusuGX?gLd" blockcontent=blockcontent %}
+</div>
+</div>

@@ -1,0 +1,24 @@
+{% capture var__tagfind %}{{ include.tagfind | default: "var__tagfind"}}{% endcapture %}
+{% capture var__tagcompare %}{{ include.tagcompare | default: "var__tagcompare"}}{% endcapture %}
+
+{% capture blockcontent1 %}
+<block_set><instance x="479" y="227"><block type="unityObjects_findTag" id="4-+PAzj/o90?wnfzB+CD"><value name="TAG"><block type="text" id="X:rQK!ySJq00N|(B+(4u"><field name="TEXT">{{ var__tagfind }}</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="479" y="280"><block type="unityObjects_tagof" id="JU+{Qa(!*:E,Oxq+Tg8~"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="476" y="332"><block type="unityControls_if" id="r_3ss55^770kymN5NcMn"><value name="IF0"><block type="unityObjects_tagcompare" id="A_8J|7qu%Wg!zQleGH,w"><value name="TAG"><block type="text" id="*OPp8?IZc[N+TV4sQ1Mh"><field name="TEXT">{{ var__tagcompare }}</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-objects {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="4-+PAzj/o90?wnfzB+CD" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="JU+{Qa(!*:E,Oxq+Tg8~" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="r_3ss55^770kymN5NcMn" blockcontent=blockcontent3 %}
+</div>
+</div>

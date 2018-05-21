@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="477" y="120"><block type="unity_me" id="6d32~;lM^a3]|5ernrV]"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-objects {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="6d32~;lM^a3]|5ernrV]" blockcontent=blockcontent %}
+</div>
+</div>

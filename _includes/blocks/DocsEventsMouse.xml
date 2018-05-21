@@ -1,0 +1,15 @@
+{% capture blockcontent1 %}
+<block_set xmlversion=""><instance x="226" y="50"><block type="unityControls_classConfig" id="!AHPtG?Y=}Dka,i{H@u." intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="228" y="151"><block type="unityEvents_mouse" id="=;g~pb6G#-7@*=BbU/3S" intask="true"><field name="HOVER">Stay</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set xmlversion=""><instance x="226" y="50"><block type="unityControls_classConfig" id="e%md*OqAj6M4kK%ge4Dj" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="226" y="138"><block type="unityEvents_mouse_click" id="Ha.w1bp05C22x%]bo1zk" intask="true"><field name="STATE">Up</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-events {{include.align}}">
+<div class="blocks-img">
+{% include blocks/hatblock.html blockid="=;g~pb6G#-7@*=BbU/3S" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/hatblock.html blockid="Ha.w1bp05C22x%]bo1zk" blockcontent=blockcontent2 %}
+</div>
+</div>

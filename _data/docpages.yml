@@ -1,0 +1,92 @@
+pages:
+  - section: welcome
+    title: false
+    pages:
+     - home
+  - section: blocks
+    title: true
+    pages: 
+     - events
+     - logic
+     - detect
+     - move
+     - vectors
+     - rotations
+     - numbers
+     - objects
+     - text
+     - time
+     - other
+     - memory
+     - more
+  - section: other
+    title: true
+    pages:
+     - paramtypes
+     - otherfeatures
+     - howtostart
+     - roadmap
+colors:
+  events: rgb(242, 148, 0)
+  logic: rgb(235, 106, 10)
+  detect: rgb(255, 105, 180)
+  move: rgb(51, 184, 202)
+  vectors: rgb(235, 195, 0)
+  rotations: rgb(223, 1, 215)
+  numbers: rgb(0, 90, 148)
+  objects: rgb(143, 164, 2)
+  text: rgb(186, 204, 30)
+  time: rgb(17, 201, 150)
+  other: rgb(85, 119, 238)
+  memory: rgb(144, 133, 186)
+  more: rgb(104, 188, 232)
+  home: "#555"
+  paramtypes: "#555"
+  otherfeatures: "#555"
+  howtostart: "#555"
+  roadmap: "#555"
+titles:
+  nl:
+    events: Gebeurtenissen
+    logic: Logica
+    detect: Waarnemen
+    move: Bewegen
+    vectors: Coördinaten & richtingen
+    rotations: Rotaties
+    numbers: Getallen
+    objects: Objecten
+    text: Tekst
+    time: Tijd
+    other: Andere
+    memory: Geheugen
+    more: Meer blokjes
+    home: Welkom
+    paramtypes: Types van parameters
+    otherfeatures: Andere functionaliteit
+    howtostart: Hoe start ik met ...?
+    roadmap: Geplande functionaliteit
+    sections:
+      other: Andere...
+      blocks: Blokjes
+  en:
+    events: Events
+    logic: Logic
+    detect: Detect
+    move: Move
+    vectors: Coordinates and directions
+    rotations: Rotations
+    numbers: Numbers
+    objects: Objects
+    text: Text
+    time: Time
+    other: Other
+    memory: Memory
+    more: More blocks
+    home: Welcome
+    paramtypes: Types of parameters
+    otherfeatures: Other functionality
+    howtostart: How to start with ...?
+    roadmap: Planned functionality
+    sections:
+      other: Other...
+      blocks: Blocks

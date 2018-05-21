@@ -1,0 +1,22 @@
+nl:
+  varname: item
+  header_name: Datatype
+  header_memoryblock: Geheugen veldje
+  header_exampleblock: Voorbeeld blokje
+  types: 
+    - type: Number
+      title: nummer
+    - type: Boolean
+      title: waar/onwaar
+    - type: String
+      title: tekst
+      text: Hello!
+    - type: GameObject
+      title: GameObject
+    - type: Vector3
+      title: coördinaat/richting
+    - type: Quaternion
+      title: rotatie
+    - type: Sprite
+      title: Sprite
+      text: sprite

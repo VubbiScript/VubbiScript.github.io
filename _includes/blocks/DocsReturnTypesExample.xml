@@ -1,0 +1,32 @@
+{% capture var__text %}{{ include.text | default: "var__text"}}{% endcapture %}
+{% capture blockcontent %}
+<block_set>
+{% if include.type == 'Number' %}
+  <instance x="242" y="288"><block type="math_number" id="Oyh7_x9U,hY))QMAR*^c"><field name="NUM">0</field></block></instance>
+{% endif %}
+{% if include.type == 'Boolean' %}
+  <instance x="243" y="331"><block type="logic_boolean" id="Oyh7_x9U,hY))QMAR*^c"><field name="BOOL">TRUE</field></block></instance>
+{% endif %}
+{% if include.type == 'String' %}
+  <instance x="242" y="429"><block type="text" id="Oyh7_x9U,hY))QMAR*^c"><field name="TEXT">{{ var__text }}</field></block></instance>
+{% endif %}
+{% if include.type == 'GameObject' %}
+  <instance x="246" y="379"><block type="unity_me" id="Oyh7_x9U,hY))QMAR*^c"></block></instance>
+{% endif %}
+{% if include.type == 'Vector3' %}
+  <instance x="242" y="481"><block type="unityVector_make" id="Oyh7_x9U,hY))QMAR*^c"><value name="X"><block type="math_number" id="RMUx~,lNn=A+i2lInUU|"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="OYfvACivSVdlJ7596bHC"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id="K#-Hy|;5PjOWTj0LwMtD"><field name="NUM">0</field></block></value></block></instance>
+{% endif %}
+{% if include.type == 'Quaternion' %}
+  <instance x="242" y="537"><block type="unityrotate_angleaxis2d" id="Oyh7_x9U,hY))QMAR*^c"><value name="ANGLE"><block type="math_number" id="1zBDohP`BFXPuXGI^FR*"><field name="NUM">90</field></block></value></block></instance>
+{% endif %}
+{% if include.type == 'Sprite' %}
+  <instance x="240" y="176"><block type="variables_get" id="Oyh7_x9U,hY))QMAR*^c"><mutation datatype="Sprite"></mutation><field name="VAR">{{ var__text }}</field></block></instance>
+{% endif %}
+</block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-returntypes {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="Oyh7_x9U,hY))QMAR*^c" blockcontent=blockcontent %}
+</div>
+</div>

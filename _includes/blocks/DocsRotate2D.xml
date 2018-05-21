@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="196" y="155"><block type="unityrotate_angleaxis2d" id="5!k3X)J]HC@n@mDP44WD"><value name="ANGLE"><block type="math_number" id="``P?Em(7gl3l%aSQzT.,"><field name="NUM">90</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-rotate {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="5!k3X)J]HC@n@mDP44WD" blockcontent=blockcontent %}
+</div>
+</div>

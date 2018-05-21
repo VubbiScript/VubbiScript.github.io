@@ -1,0 +1,25 @@
+<div class="docsmenuroot">
+  {% for section in site.data.docpages.pages %}
+    {% if section.title %}
+      <h5 class="clear" style="margin-bottom: 0px;">{{ include.titles.sections[section.section] }}</h5>
+    {% endif %}
+    {% for menupageitem in section.pages %}
+      {% capture menulink %}{{site.baseurl}}/{{curlang}}/docs/{{menupageitem}}/{% endcapture %}
+      {% if menupageitem == "home" %}
+        {% capture menulink %}{{site.baseurl}}/{{curlang}}/docs/{% endcapture %}
+      {% endif %}
+      <a href="{{menulink}}">
+      {% if include.current == menupageitem %}
+        <div class="docsmenuitem" style="border-left: 25px solid {{ site.data.docpages.colors[menupageitem] }};background-color:{{ site.data.docpages.colors[menupageitem] }};">
+          <span class="docsmenuitemtext" style="color: white;">{{ include.titles[menupageitem] }}</span>
+        </div>
+      {% else %}
+        <div class="docsmenuitem" style="border-left: 25px solid {{ site.data.docpages.colors[menupageitem] }};">
+          <span class="docsmenuitemtext">{{ include.titles[menupageitem] }}</span>
+        </div>
+      {% endif %}
+      </a>
+    {% endfor %}
+    <div class="clear"></div>
+  {% endfor %}
+</div>

@@ -1,0 +1,7 @@
+{% capture blockcontent %}
+<block_set xmlversion=""><instance x="226" y="50"><block type="unityControls_classConfig" id="0%G5)LbnvkU:jINnUsu!" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="226" y="170"><block type="unityEvents_start" id="XL8O:J2N.Y02O|on=%l|" intask="true"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-img blocks-section blocks-events {{include.align}}">
+{% include blocks/hatblock.html blockid="XL8O:J2N.Y02O|on=%l|" blockcontent=blockcontent %}
+</div>

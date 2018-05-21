@@ -1,0 +1,45 @@
+{% capture blockcontent_if %}
+<block_set><instance><block type="unityControls_if" id="(3v{QA%)u?GFI/OBR{;J"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent_ifelse %}
+<block_set><instance><block type="unityControls_ifElse" id="i}qSj0N]:vLWwecd}{:c"><mutation else="1"></mutation></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent_compareequals %}
+<block_set><instance><block type="logic_compare" id="(iGIXNJ|2JD)w@+0Z{@i"><field name="OP">EQ</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent_operator %}
+<block_set><instance><block type="logic_operation" id="}j@rIr?uJ)8ElUDO{)RG"><field name="OP">AND</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent_not %}
+<block_set><instance><block type="logic_negate" id="MwNEO2=?8k[:T,]=}E2A"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent_truefalse %}
+<block_set><instance x="236" y="116"><block type="logic_boolean" id="lUm%(Iu5dpYWtCVelS1l"><field name="BOOL">TRUE</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent_inlineif %}
+<block_set><instance x="243" y="112"><block type="logic_ternary" id="9/bJ!/QCUMFA8t`{jSwg"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-logic {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="(3v{QA%)u?GFI/OBR{;J" blockcontent=blockcontent_if %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="i}qSj0N]:vLWwecd}{:c" blockcontent=blockcontent_ifelse %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="(iGIXNJ|2JD)w@+0Z{@i" blockcontent=blockcontent_compareequals %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="}j@rIr?uJ)8ElUDO{)RG" blockcontent=blockcontent_operator %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="MwNEO2=?8k[:T,]=}E2A" blockcontent=blockcontent_not %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="lUm%(Iu5dpYWtCVelS1l" blockcontent=blockcontent_truefalse %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="9/bJ!/QCUMFA8t`{jSwg" blockcontent=blockcontent_inlineif %}
+</div>
+</div>

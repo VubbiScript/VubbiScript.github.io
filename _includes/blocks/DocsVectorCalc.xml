@@ -1,0 +1,27 @@
+{% capture blockcontent1 %}
+<block_set><instance x="216" y="184"><block type="unityVector_multiply" id="ioa1hhda+BfA|Jl{cQeU"><value name="FACTOR"><block type="math_number" id="H05v,M)/nNYdK0,Wss`o"><field name="NUM">2</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="214" y="125"><block type="unityVector_tosize" id="^s_EIL~c0^YWUT7kv~(b"><value name="TOLENGTH"><block type="math_number" id="%Gf%_L2,1_?;@S~@StV+"><field name="NUM">1</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="214" y="250"><block type="unityVector_math" id="N(./u@;vb8Q7HT%S2..O"><field name="OP">ADD</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent4 %}
+<block_set><instance x="212" y="307"><block type="unityVector_product" id="B./Jy#MZjP6));fk9GDF"><field name="PRODUCTTYPE">DOT</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-vector {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="ioa1hhda+BfA|Jl{cQeU" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="^s_EIL~c0^YWUT7kv~(b" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="N(./u@;vb8Q7HT%S2..O" blockcontent=blockcontent3 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="B./Jy#MZjP6));fk9GDF" blockcontent=blockcontent4 %}
+</div>
+</div>

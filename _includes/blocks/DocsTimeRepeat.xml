@@ -1,0 +1,15 @@
+{% capture blockcontent1 %}
+<block_set><instance x="467" y="357"><block type="unityTime_repeat" id="Nl,f54u-_m6H]04K`#rA"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="467" y="453"><block type="unityTime_repeat_while" id=".U92.q~[b^=a~bZ5!E#V"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-time {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="Nl,f54u-_m6H]04K`#rA" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid=".U92.q~[b^=a~bZ5!E#V" blockcontent=blockcontent2 %}
+</div>
+</div>

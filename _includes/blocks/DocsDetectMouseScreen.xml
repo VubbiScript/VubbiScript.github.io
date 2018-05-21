@@ -1,0 +1,15 @@
+{% capture blockcontent1 %}
+<block_set><instance x="234" y="495"><block type="unityScreen_mouse_position" id="hx10X+c{Na^:`v+rg2JP"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="234" y="544"><block type="unityScreen_screen_size" id="R,p4pP~g%~4zuHQ_^0~B"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-detect {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="hx10X+c{Na^:`v+rg2JP" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="R,p4pP~g%~4zuHQ_^0~B" blockcontent=blockcontent2 %}
+</div>
+</div>

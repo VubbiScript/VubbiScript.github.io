@@ -1,0 +1,58 @@
+
+img.img-left, div.img-left {
+  float:left;
+  margin-right: 3%;
+}
+img.img-right, , div.img-right {
+  float:right;
+  margin-left: 3%;
+}
+
+img.img-sm {
+  max-width:350px;
+}
+
+
+// Images with caption & "Polaroid" type of images
+figure figcaption {
+  font-size: 70%;
+  color: #333;
+}
+figure.polaroid {
+  display: inline-block;
+  border: 1px solid #EEE;
+  background: white;
+  margin: 0 15px 30px;
+  padding: 10px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+  z-index:0;
+  position:relative;
+}
+figure.polaroid figcaption {
+  color: #333;
+  position: relative;
+  top:15px;
+}
+figure.polaroid.polaroida {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+figure.polaroid.polaroidb {
+  -webkit-transform: rotate(-.75deg);
+  -moz-transform: rotate(-.75deg);
+  transform: rotate(-.75deg);
+}
+figure.polaroid.polaroidc {
+  -webkit-transform: rotate(.5deg);
+  -moz-transform: rotate(.5deg);
+  transform: rotate(.5deg);
+}
+// End polaroid

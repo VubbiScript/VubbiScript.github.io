@@ -1,0 +1,8 @@
+{% capture var__key %}{{ include.key | default: "Space"}}{% endcapture %}
+{% capture blockcontent %}
+<block_set xmlversion=""><instance x="238" y="123"><block type="unityInput_key" id="KoZc@uE:qUY`aCi^-Xy_"><field name="KEY">{{ var__key }}</field><field name="PRESSED">Down</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-img blocks-section blocks-detect {{include.align}}">
+{% include blocks/block.html blockid="KoZc@uE:qUY`aCi^-Xy_" blockcontent=blockcontent %}
+</div>

@@ -1,0 +1,16 @@
+{% capture var__messagename %}{{ include.messagename | default: "var__messagename"}}{% endcapture %}
+{% capture blockcontent1 %}
+<block_set xmlversion=""><instance x="226" y="50"><block type="unityControls_classConfig" id="DO9o6gPMl{,hVyPUU-Yh" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="226" y="134"><block type="unityGeneral_msgReceive" id="Q7g]C%L3ZIY1!AY_uK`p" intask="true"><field name="EVENT">{{var__messagename}}</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set xmlversion=""><instance x="226" y="50"><block type="unityControls_classConfig" id="%ADZm2:IZ-[B^J[I#XAz" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="225" y="116"><block type="unityGeneral_msgSend" id="z(-M=9VYjj^xw#}na}Ah" intask="true"><field name="MESSAGE">{{var__messagename}}</field><field name="NEEDRECEIVE">TRUE</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-events {{include.align}}">
+<div class="blocks-img">
+{% include blocks/hatblock.html blockid="Q7g]C%L3ZIY1!AY_uK`p" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="z(-M=9VYjj^xw#}na}Ah" blockcontent=blockcontent2 %}
+</div>
+</div>

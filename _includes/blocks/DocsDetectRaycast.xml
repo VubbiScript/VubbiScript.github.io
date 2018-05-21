@@ -1,0 +1,7 @@
+{% capture blockcontent %}
+<block_set xmlversion=""><instance x="238" y="255"><block type="unityRaycast_raycast" id="Sf-/OBhKHAkGMH:3mSLW"><mutation declare="false"></mutation><field name="PHYSICS">2D</field><value name="ORIGIN"><block type="unityTransform_position" id=";fLHF}r*Wc.}^_`Fdd/R"><value name="WHO"><block type="unity_me" id="skj[Yobv.jQ}Js%wz,0l"></block></value></block></value><value name="DIRECTION"><block type="unityVector_pick" id=":S(%2iyN7,UF#uVPl){D"><field name="OPTION">down</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-img blocks-section blocks-detect {{include.align}}">
+{% include blocks/block.html blockid="Sf-/OBhKHAkGMH:3mSLW" blockcontent=blockcontent %}
+</div>

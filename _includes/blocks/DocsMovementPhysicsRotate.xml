@@ -1,0 +1,21 @@
+{% capture blockcontent1 %}
+<block_set><instance x="239" y="118"><block type="unityPhysics_angularSpeed" id="n4UQ}i(5G47#j{WLG?2O"><mutation type="Number"></mutation><field name="PHYSICS">2D</field><value name="WHO"><block type="unity_me" id="a?bq7.s[}YFi8Lg;#ps]"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="231" y="183"><block type="unityPhysics_torque" id="ReO-F,({.o*m.s`?:Px/"><mutation type="Number"></mutation><field name="PHYSICS">2D</field><value name="WHO"><block type="unity_me" id="OYQlr:I0RE+@_v`dP|Lc"></block></value><value name="TORQUE"><block type="math_number" id="!ld4flChWr)c[.PcuFNm"><field name="NUM">0</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="231" y="256"><block type="unityPhysics_angularSpeed_set" id="E=ByRa2sR9|%V`ug]QzN"><mutation type="Number"></mutation><field name="PHYSICS">2D</field><value name="WHO"><block type="unity_me" id="hP,V);g7dLyb;VuutIh@"></block></value><value name="SPEED"><block type="math_number" id="^homTUzxyP(ZCkvKDrsZ"><field name="NUM">0</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-movement {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="n4UQ}i(5G47#j{WLG?2O" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="ReO-F,({.o*m.s`?:Px/" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="E=ByRa2sR9|%V`ug]QzN" blockcontent=blockcontent3 %}
+</div>
+</div>

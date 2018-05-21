@@ -1,0 +1,8 @@
+{% capture var__messagename %}{{ include.messagename | default: "var__messagename"}}{% endcapture %}
+{% capture var__tagname %}{{ include.tagname | default: "var__tagname"}}{% endcapture %}
+{% capture blockcontent %}
+<block_set xmlversion=""><instance x="246" y="50"><block type="unityControls_classConfig" id="MnZX=s.Iq3}V~:}6B7?l" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="245" y="176"><block type="unityEvents_collision" id=")e.I?tG|rjgI9%Q[?~2Z" intask="true"><mutation declare="false"></mutation><field name="STATE">Enter</field><field name="PHYSICS">2D</field></block><block type="unityGeneral_msgSend" id="TmKyn.J.Rfx,YB@B*kMQ" intask="true"><field name="MESSAGE">{{ var__messagename }}</field><field name="NEEDRECEIVE">TRUE</field><value name="WHO"><block type="unityObjects_findTag" id="~6@b!1A?,WGjC9OqUDVR" intask="true"><value name="TAG"><block type="text" id="~O#}a%U2@DO*fpqF?^at" intask="true"><field name="TEXT">{{ var__tagname }}</field></block></value></block></value></block><block type="unityGeneral_destroy" id="fyZOy;mPd0.~~hnQLO!u" intask="true"><value name="WHO"><block type="unity_me" id="U+*}x~LBm|/qOO0`8De@" intask="true"></block></value></block></instance></block_set>
+{% endcapture %}
+<div class="blocks-img">
+{% include blocks/block.html blockid="TmKyn.J.Rfx,YB@B*kMQ -S fyZOy;mPd0.~~hnQLO!u" blockcontent=blockcontent %}
+</div>

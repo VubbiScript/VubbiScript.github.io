@@ -1,0 +1,21 @@
+{% capture blockcontent1 %}
+<block_set><instance x="233" y="117"><block type="unityTransform_jumpto" id="_5jRd-cZ-sTr*L*~sWXE"><value name="WHO"><block type="unity_me" id="s(Z|2C6t%Q6ZPVt:PX3f"></block></value><value name="WHERE"><block type="unityVector_make" id="3mOt,hKjgo%e-l?-i_-u"><value name="X"><block type="math_number" id="Q1[u-7{T(NL`yt_,MT[O"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="6t;[.n8[Ed))q`*oQ:rG"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id=";D/ocW}PmNyX|f;(t2%W"><field name="NUM">0</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="235" y="203"><block type="unityTransform_move" id="}cfWyXXGhtC.T5?X{qgo"><value name="WHO"><block type="unity_me" id="x3fy=ry^ATW[@ZUl|vX]"></block></value><value name="DELTA"><block type="unityVector_make" id="~9Tp8-GeZKuT;/d=u:ZK"><value name="X"><block type="math_number" id="c|r/shwOI:EIwGjXN~Ey"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="zA?VU}Hv3t;?*E/7wc:P"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id="JCR,bOhkOf1.q[G]%8gX"><field name="NUM">0</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="240" y="284"><block type="unityTransform_position" id="g8bd|0jsWqcRlzl(`|eI"><value name="WHO"><block type="unity_me" id="TJ~aTz(%yiNZevI73`8`"></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-movement {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="_5jRd-cZ-sTr*L*~sWXE" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="}cfWyXXGhtC.T5?X{qgo" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="g8bd|0jsWqcRlzl(`|eI" blockcontent=blockcontent3 %}
+</div>
+</div>

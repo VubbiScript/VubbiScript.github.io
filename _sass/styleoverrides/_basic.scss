@@ -1,0 +1,70 @@
+
+// Change the way articles resize
+article,
+.comments {
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    padding: 15px;
+    max-width:  100%;
+    float:none;
+}
+
+article header {
+  text-align: left;
+}
+
+//
+// Example block
+//
+.exampleblock {
+  border: 1px solid #EEE;
+  background: #fffad9;
+  margin: 20px 0px 20px 15%;
+  padding: 10px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+
+//
+// Next changes are from "Type On Strap"
+//
+// Source: theme: Type On Strap
+//
+
+// Mobile display
+$break: 768px;
+$sm-break: 450px;
+
+.site-footer {
+    .footer-icons {
+        ul {
+            list-style: none;
+            li {
+                display: inline;
+            }
+        }
+    }
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 0.9em;
+}
+
+.activemenuitem {
+  border-bottom: 2px solid #4fc6ff;
+}

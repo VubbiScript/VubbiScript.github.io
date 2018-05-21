@@ -1,0 +1,15 @@
+{% capture blockcontent1 %}
+<block_set><instance x="469" y="250"><block type="unityTime_levelload" id="@Ostv8z{|lu6Ucyn{X1e"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="469" y="300"><block type="unityTime_delta" id="v*=Qdm=,+2_([Vr}54^F"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-time {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="@Ostv8z{|lu6Ucyn{X1e" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="v*=Qdm=,+2_([Vr}54^F" blockcontent=blockcontent2 %}
+</div>
+</div>

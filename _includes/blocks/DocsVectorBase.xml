@@ -1,0 +1,27 @@
+{% capture blockcontent1 %}
+<block_set><instance x="243" y="114"><block type="unityVector_make" id="c8tfx-g(g`f+P}6P2-!}"><value name="X"><block type="math_number" id="G0OORy|{JN.L0,lV6Y_Y"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="N~bKFYasrzF4lpso0XRn"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id="8zM(tgi{woo8sggP6zsc"><field name="NUM">0</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="245" y="183"><block type="unityVector_get" id="d@5X:In2=+(HSL)]kQRp"><field name="OPT">X</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="244" y="240"><block type="unityVector_length" id="}a+2rMr|by^r+/T7tuzJ"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent4 %}
+<block_set><instance x="244" y="296"><block type="unityVector_pick" id="K?8Di)zv(5)?:M#Fe+gt"><field name="OPTION">up</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-vector {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="c8tfx-g(g`f+P}6P2-!}" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="d@5X:In2=+(HSL)]kQRp" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="}a+2rMr|by^r+/T7tuzJ" blockcontent=blockcontent3 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="K?8Di)zv(5)?:M#Fe+gt" blockcontent=blockcontent4 %}
+</div>
+</div>

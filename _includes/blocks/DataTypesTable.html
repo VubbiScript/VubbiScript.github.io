@@ -1,0 +1,18 @@
+<table style="table-layout:auto;background-color:#eee;">
+  <tr>
+    <th>{{ include.data.header_name }}</th>
+    <th></th>
+    <th></th>
+    <th>{{ include.data.header_memoryblock }}</th>
+    <th>{{ include.data.header_exampleblock }}</th>
+  </tr>
+{% for datatype in include.data.types %}
+  <tr>
+    <td><div style="background-color:{{site.data.datatypecolors[datatype.type]}};border-radius:12px;width:12px;height:12px;display:inline-block;"></div> {{ datatype.title }}</td>
+    <td style="padding:0px;">{% include blocks/DocsReturnTypesGet.xml type=datatype.type varname=include.data.varname %}</td>
+    <td style="padding:0px;">{% include blocks/DocsReturnTypesSet.xml type=datatype.type varname=include.data.varname %}</td>
+    <td style="padding:0px;">{% include blocks/DocsReturnTypesMemory.xml type=datatype.type varname=include.data.varname text=datatype.text %}</td>
+    <td style="padding:0px;">{% include blocks/DocsReturnTypesExample.xml type=datatype.type text=datatype.text %}</td>
+  </tr>
+{% endfor %}
+</table>

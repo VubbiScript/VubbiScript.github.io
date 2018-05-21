@@ -1,0 +1,27 @@
+{% capture blockcontent1 %}
+<block_set><instance x="233" y="138"><block type="unityrotate_get_rotation" id="2J={:#cm^7d_|-8T58U~"><value name="WHO"><block type="unity_me" id="-XG.psv?eC?1B`OnIe8]"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="232" y="215"><block type="unityrotate_set_rotation" id="1!bc5qv?|(%z11w*-f_K"><value name="WHO"><block type="unity_me" id="Rn;t#0]@82QTM?x9!x;n"></block></value><value name="QUATERNION"><block type="unityrotate_identity" id="leG.5,sQFrScsXs{y=PD"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="231" y="297"><block type="unityrotate_set_rotation" id="sKT,WMnnEXv1)^01}![U"><value name="WHO"><block type="unity_me" id="eQk2@r/g?aYFTV5kB^-i"></block></value><value name="QUATERNION"><block type="unityrotate_angleaxis2d" id="Q/PSWR+jzdu2Le@zO;5_"><value name="ANGLE"><block type="math_number" id="ZM5Uams9o:E:WuVE6!tR"><field name="NUM">90</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent4 %}
+<block_set><instance x="226" y="381"><block type="unityrotate_rotate" id="60)C~I}0_TvOpEK*wm[z"><value name="WHO"><block type="unity_me" id=",8mif?~zk`ocIo.~LT*G"></block></value><value name="QUATERNION"><block type="unityrotate_angleaxis2d" id="AZzS}nvJ/fYVmwG@ylU."><value name="ANGLE"><block type="math_number" id="HvuGDbbOTAQ)@n=lQ#5a"><field name="NUM">90</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-movement {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="2J={:#cm^7d_|-8T58U~" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="1!bc5qv?|(%z11w*-f_K" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="sKT,WMnnEXv1)^01}![U" blockcontent=blockcontent3 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="60)C~I}0_TvOpEK*wm[z" blockcontent=blockcontent4 %}
+</div>
+</div>

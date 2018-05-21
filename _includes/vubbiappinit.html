@@ -1,0 +1,27 @@
+    
+<!-- Vubbi Read-only app -->
+<script src="{{ site.baseurl }}/app_no_edit/app.js"></script>
+<style>
+  .vubbiblock .blocklyMainBackground {
+    stroke-width: 0;
+  }
+</style>
+<link rel="stylesheet/css" href="{{ site.baseurl }}/app_no_edit/app.css"/>
+<script>require(["app_no_edit/Main"], function(){});</script>
+
+<!-- Hide my e-mail for spam bots -->
+<script>
+  $(document).ready(function() {
+      // my e-mail...
+      var classname=".contactme_mail";
+      var classname_link=".contactmelink"
+      var x=String.fromCharCode(2*2*2*2*2*2)+"g";
+      var y="jeroen penninck".split(" ").join(".");
+      var z="+vubbi";
+      
+      var m=y+z+x+("liam".split("").reverse().join(""))+"."+("moc".split("").reverse().join(""));
+      $(classname).text(m.replace("+", "+ "));
+      $(classname_link).attr("href", "otliam".split("").reverse().join("")+":"+m);
+      $("a[href='mailto:auto-replace']").attr("href", "otliam".split("").reverse().join("")+":"+m);
+  });
+</script>

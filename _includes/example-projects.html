@@ -1,0 +1,58 @@
+{%- comment %}
+ --
+ -- Find the language of the current page by looking at the path!
+ --
+{% endcomment -%}
+{%- assign curlang = site.defaultlang -%}
+{%- assign pathpieces = page.path | split: "/" -%}
+{%- assign sizecheck = pathpieces | size -%}
+{%- if pathpieces[0] == '_pages' and sizecheck >= 3 -%}
+{%- assign curlang = pathpieces[1] -%}
+{%- endif %}
+
+{%- comment %}
+ --
+ -- Find all languages!
+ --
+{% endcomment -%}
+{%- assign pagepaths = site.pages | map: "path" -%}
+{%- assign languages = curlang -%}
+{%- assign languageswithpage = curlang -%}
+{%- for path in pagepaths -%}
+  {%- comment %} Make a ; separated string of all languages {% endcomment %}
+  {%- assign thispathsplit = path | split: "/" -%}
+  {%- assign thislang = thispathsplit[1] -%}
+  {%- assign languages = languages | append:";" | append:thislang -%}
+
+  {%- comment %} Check if the current page exists in the other language {% endcomment %}
+  {%- assign frompathpart = thispathsplit[0] | append:"/" | append: thispathsplit[1] | append: "/" -%}
+  {%- assign topathpart = thispathsplit[0] | append:"/" | append: curlang | append: "/" -%}
+  {%- assign pathifincurrentlang = path | replace_first:frompathpart,topathpart -%}
+  {%- if pathifincurrentlang == page.path -%}
+    {%- assign languageswithpage = languageswithpage | append:";" | append:thislang -%}
+  {%- endif -%}
+{%- endfor %}
+{%- assign languages = languages | split:";" | uniq | sort_natural -%}
+{%- assign languageswithpage = languageswithpage | split:";" | uniq | sort_natural -%}
+
+<div class="examplecards">
+
+{% for menupageentry in site.data.examples -%}
+  {%- assign menupagename = "_pages/" | append: curlang | append:"/examples/" | append:menupageentry -%}
+  {%- assign menupage = site.pages | where: "path",menupagename | first %}
+  <a href="{{ site.baseurl }}{{ menupage.url }}">
+    <div class="card">
+      <div class="title">
+          {{ menupage.title }}
+      </div>
+      <div class="thumb" style="background-image: url({{ menupage.featured-img }})"></div>
+      <div class="description">
+        {{ menupage.excerpt }}
+      </div>
+    </div>
+  </a>
+{% endfor -%}
+
+</div>
+
+<div class="clear"></div>

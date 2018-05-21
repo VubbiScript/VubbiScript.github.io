@@ -1,0 +1,21 @@
+{% capture blockcontent1 %}
+<block_set><instance x="237" y="106"><block type="unityPhysics_velocity" id="ENeX`3n2L8CF}ipcGY5U"><field name="PHYSICS">2D</field><value name="WHO"><block type="unity_me" id="ex}G+G^Dh3ffN;^ry{}d"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="230" y="193"><block type="unityPhysics_push" id="PGR8pZN;h4#+~`w4T;WH"><field name="PHYSICS">2D</field><value name="WHO"><block type="unity_me" id="I:+9%[F;0%yvRSiNuvk@"></block></value><value name="DIRECTION"><block type="unityVector_make" id="i3Ljnv/dLcpA0/2K5Dc%"><value name="X"><block type="math_number" id="V8|^W,]GwgkC:L(hj6lG"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="02p/;n8:x5a%_REJ7)TI"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id="5LwMA1gbJVH:3_=%4ZLV"><field name="NUM">0</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="228" y="281"><block type="unityPhysics_velocity_set" id="T~qI65s.x)Q)bLtlEixH"><field name="PHYSICS">2D</field><value name="WHO"><block type="unity_me" id="H/Z8G5{E3NIUedSn^Uo}"></block></value><value name="SPEED"><block type="unityVector_make" id="[(mH^k-X{T6VmgB_g6;J"><value name="X"><block type="math_number" id="KVrYK-mqw2|Zc}eL0}aa"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="=[qM+:*L1IhVhZVzz?pb"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id="qE}9!A%[orR}!D^|(VR:"><field name="NUM">0</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-movement {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="ENeX`3n2L8CF}ipcGY5U" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="PGR8pZN;h4#+~`w4T;WH" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="T~qI65s.x)Q)bLtlEixH" blockcontent=blockcontent3 %}
+</div>
+</div>

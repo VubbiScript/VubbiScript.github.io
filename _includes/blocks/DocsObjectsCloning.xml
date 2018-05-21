@@ -1,0 +1,21 @@
+{% capture blockcontent1 %}
+<block_set><instance x="478" y="479"><block type="unityGeneral_destroy" id="VbuZx}:FOnk3.=UKf0UH"><value name="WHO"><block type="unity_me" id="DHBATTz{Ig8vhXt,gM/R"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="479" y="547"><block type="unityGeneral_create" id="GNHkGCa{n5_[b6!*ocg{"><value name="WHO"><block type="unity_me" id="UV3}VC{;i){x9kbHFU=F"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="483" y="597"><block type="unityGeneral_createGet" id="Q|41}jsUpnr?yd+(4SLP"><value name="WHO"><block type="unity_me" id=":19{149;[i1!1?1{g/1-"></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-objects {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="VbuZx}:FOnk3.=UKf0UH" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="GNHkGCa{n5_[b6!*ocg{" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="Q|41}jsUpnr?yd+(4SLP" blockcontent=blockcontent3 %}
+</div>
+</div>

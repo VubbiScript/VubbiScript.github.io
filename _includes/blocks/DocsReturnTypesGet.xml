@@ -1,0 +1,11 @@
+{% capture var__varname %}{{ include.varname | default: "var__varname"}}{% endcapture %}
+{% capture var__type %}{{ include.type | default: "Number"}}{% endcapture %}
+{% capture blockcontent %}
+<block_set><instance x="240" y="176"><block type="variables_get" id="u_wU2BRsRB=+hFRsk25U"><mutation datatype="{{ var__type }}"></mutation><field name="VAR">{{ var__varname }}</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-returntypes {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block_begin.html blockid="u_wU2BRsRB=+hFRsk25U" blockcontent=blockcontent %}
+</div>
+</div>

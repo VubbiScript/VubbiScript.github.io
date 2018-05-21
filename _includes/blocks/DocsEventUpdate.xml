@@ -1,0 +1,7 @@
+{% capture blockcontent %}
+<block_set xmlversion=""><instance x="226" y="50"><block type="unityControls_classConfig" id="lQ4L`YyW}z`OlJXwOqD)" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="226" y="290"><block type="unityEvents_update" id="=^^{u7v(Y([~8?-oXF@2" intask="true"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-img blocks-section blocks-events {{include.align}}">
+{% include blocks/hatblock.html blockid="=^^{u7v(Y([~8?-oXF@2" blockcontent=blockcontent %}
+</div>

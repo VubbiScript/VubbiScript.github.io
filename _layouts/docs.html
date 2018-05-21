@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{%- comment %}
+ --
+ -- Find the language of the current page by looking at the path!
+ --
+{% endcomment -%}
+{%- assign curlang = site.defaultlang -%}
+{%- assign pathpieces = page.path | split: "/" -%}
+{%- assign pathsize = pathpieces | size -%}
+{%- if pathpieces[0] == '_pages' and pathsize >= 3 -%}
+{%- assign curlang = pathpieces[1] -%}
+{%- endif -%}
+
+{%- assign curdoctitles = site.data.docpages.titles[curlang] -%}
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 class="title" style="margin-bottom:0px;">{{ page.title }}</h1>
+    {% include docsmenu.html titles=curdoctitles current=page.docs_id %}
+    
+    {% if page.subtitle %}
+      <div>
+        <h2 class="subtitle" style="margin-top:100px;margin-bottom:-20px;">
+          <div style="width:40px;height:40px;display:inline-block;vertical-align:-10px;background-color:{{site.data.docpages.colors[page.docs_id]}};"></div>
+          {{ page.subtitle }}
+        </h2>
+      </div>
+    {% endif %}
+  </header>
+  <section class="post-content">{{ content }}
+  <div class="clear"></div>
+  </section>
+  <footer style="margin-top: 100px;">
+    <!--{% include docsmenu.html titles=curdoctitles current=page.docs_id %}-->
+  </footer>
+</article>

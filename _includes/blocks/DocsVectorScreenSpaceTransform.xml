@@ -1,0 +1,21 @@
+{% capture blockcontent1 %}
+<block_set><instance x="200" y="116"><block type="unityScreen_screen_to_scene" id="w.f|!Ii-[cK*JpPcs1^J"><value name="CAM"><block type="unityScreen_camera_main" id="GJP-D},hwM5)|N)F}f|V"></block></value><value name="PLANE_NORMAL"><block type="unityVector_pick" id="qjnWpiS!`}TZv5qevE!{"><field name="OPTION">back</field></block></value><value name="PLANE_POINT"><block type="unityVector_make" id="^h|:m,S!ymRwg[I5Xu]0"><value name="X"><block type="math_number" id="Fr!/c_5=tYRrh)@li5!y"><field name="NUM">0</field></block></value><value name="Y"><block type="math_number" id="EEh{F8=c9KgpbOHn^UeQ"><field name="NUM">0</field></block></value><value name="Z"><block type="math_number" id="3lw5dvJHqj`EqhTJ;0G9"><field name="NUM">0</field></block></value></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="201" y="249"><block type="unityScreen_scene_to_screen" id="ZFoT@mmL?vhz.PWpSnwD"><value name="CAM"><block type="unityScreen_camera_main" id="fWgzsA?aZFB{6%@Tvm9y"></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="202" y="322"><block type="unityScreen_screen_to_scene_direction" id="(:TwT8myhRPC+H!}/j#;"><value name="CAM"><block type="unityScreen_camera_main" id="9bP^|6{#{)V~QvJ}]1/}"></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-vector {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="w.f|!Ii-[cK*JpPcs1^J" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="ZFoT@mmL?vhz.PWpSnwD" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="(:TwT8myhRPC+H!}/j#;" blockcontent=blockcontent3 %}
+</div>
+</div>

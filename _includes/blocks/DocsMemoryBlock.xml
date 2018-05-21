@@ -1,0 +1,12 @@
+{% capture var__strvarname %}{{ include.strvarname | default: "var__strvarname"}}{% endcapture %}
+{% capture var__strvarvalue %}{{ include.strvarvalue | default: "var__strvarvalue"}}{% endcapture %}
+{% capture var__numvarname %}{{ include.numvarname | default: "var__numvarname"}}{% endcapture %}
+{% capture blockcontent %}
+<block_set><instance x="232" y="50"><block type="unityControls_classConfig" id="o);-;O;kM@Hz*{hd.A@?" deletable="false"><mutation declare="true"></mutation><statement name="ST"><block type="unityGlobalVariables_declare" id="xciR1Sf}T3Qp2XzYHz;^" deletable="false" movable="false"><mutation next="true" declaration_type="String"></mutation><field name="VAR">{{ var__strvarname }}</field><field name="TYPE">String</field><field name="TEXT">{{ var__strvarvalue }}</field></block><block type="unityGlobalVariables_declare" id="y@P~s}`Sjt=[3j2DydL9" deletable="false" movable="false"><mutation next="false" declaration_type="Number"></mutation><field name="VAR">{{ var__numvarname }}</field><field name="TYPE">Number</field><field name="NUM">2</field></block></statement></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-memory {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="o);-;O;kM@Hz*{hd.A@?" blockcontent=blockcontent %}
+</div>
+</div>

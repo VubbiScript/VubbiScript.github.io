@@ -1,0 +1,41 @@
+.docsmenuroot {
+  padding:5px;
+  padding-left:14px;
+  border:1px solid #ccc;
+  border-left:16px solid #555;
+  background-color: #eee;
+  margin: 20px 5px;
+  transform: scale(0.98);
+}
+
+.docsmenuroot .docsmenuitem {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float:left;
+  margin: 2px;
+}
+
+.docsmenuroot .docsmenuitem:hover {
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+.docsmenuitemtext:hover {
+  cursor: pointer;
+}
+
+.docsmenuitemtext {
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0 3px;
+    font-weight: 600;
+    color: #666;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+}

@@ -1,0 +1,7 @@
+{% capture blockcontent %}
+<block_set><instance x="235" y="441"><block type="unityScreen_mouse_scene_position2D" id="mDZ,83U-wClfzt`p~,xI"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-img blocks-section blocks-detect {{include.align}}">
+{% include blocks/block.html blockid="mDZ,83U-wClfzt`p~,xI" blockcontent=blockcontent %}
+</div>

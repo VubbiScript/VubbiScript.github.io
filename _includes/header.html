@@ -1,0 +1,107 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.theme_settings.google_analytics }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+{%- comment %}
+ --
+ -- Find the language of the current page by looking at the path!
+ --
+{% endcomment -%}
+{%- assign curlang = site.defaultlang -%}
+{%- assign pathpieces = page.path | split: "/" -%}
+{%- if pathpieces[0] == '_pages' and (pathpieces | size) >= 3 -%}
+{%- assign curlang = pathpieces[1] -%}
+{%- endif %}
+
+{%- comment %}
+ --
+ -- Find all languages!
+ --
+{% endcomment -%}
+{%- assign pagepaths = site.pages | map: "path" -%}
+{%- assign languages = curlang -%}
+{%- assign languageswithpage = curlang -%}
+{%- for path in pagepaths -%}
+  {%- comment %} Make a ; separated string of all languages {% endcomment %}
+  {%- assign thispathsplit = path | split: "/" -%}
+  {%- assign thislang = thispathsplit[1] -%}
+  {%- assign languages = (languages | append:";" | append:thislang) -%}
+
+  {%- comment %} Check if the current page exists in the other language {% endcomment %}
+  {%- assign frompathpart = thispathsplit[0] | append:"/" | append: thispathsplit[1] | append: "/" -%}
+  {%- assign topathpart = thispathsplit[0] | append:"/" | append: curlang | append: "/" -%}
+  {%- assign pathifincurrentlang = path | replace_first:frompathpart,topathpart -%}
+  {%- if pathifincurrentlang == page.path -%}
+    {%- assign languageswithpage = (languageswithpage | append:";" | append:thislang) -%}
+  {%- endif -%}
+{%- endfor %}
+{%- assign languages = languages | split:";" | uniq | sort_natural -%}
+{%- assign languageswithpage = languageswithpage | split:";" | uniq | sort_natural -%}
+
+<header class="site-header">
+    
+    <!-- Logo and title -->
+	<div class="branding">
+    <div class="branding-details">
+      <a href="{{ site.baseurl }}/">
+        <div class="avatar">
+          {% include logo.html %}
+        </div>
+      </a>
+      
+      <div class="site-title">
+        <h1>
+          <a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
+        </h1>
+        <h2>
+          <a href="{{ site.baseurl }}/">{{ site.data.i18n[curlang].subtitle }}</a>
+        </h2>
+      </div>
+    </div>
+    
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+    
+    <!-- Languages Menu -->
+    <ul>
+      {% for lang in languages -%}
+      <li>
+        {%- if lang == curlang -%}
+          <img src="{{ site.baseurl }}/assets/img/flags/{{lang}}.png" style="width:32px;height:32px;opacity:0.5;padding:0px;"/>
+        {%- else -%}
+          {%- if languageswithpage contains lang -%}
+            {%- assign partto = append:"/" | append: lang | append: "/" -%}
+            {%- assign partfrom = append:"/" | append: curlang | append: "/" -%}
+            {%- assign pathifincurrentlang = page.url | replace_first:partfrom,partto -%}
+            <a href="{{pathifincurrentlang}}"><img src="{{ site.baseurl }}/assets/img/flags/{{lang}}.png" style="width:32px;height:32px;padding:0px;"/></a>
+          {%- endif -%}
+        {%- endif -%}
+      </li>
+      {% endfor -%}
+    </ul>
+    
+    <!-- Menu -->
+    <ul>
+        {% for menupageentry in site.data.menupages -%}
+          {%- assign menupagename = "_pages/" | append: curlang | append:"/" | append:menupageentry -%}
+          {%- assign menupage = (site.pages | where: "path",menupagename | first) %}
+        <li>
+            {%- if page.slug == menupage.slug %}
+                <a class="clear activemenuitem" href="{{ site.baseurl }}{{ menupage.url }}">
+                    {{ menupage.title }}
+                </a>
+            {%- else -%}
+                <a class="clear" href="{{ site.baseurl }}{{ menupage.url }}">
+                    {{ menupage.title }}
+                </a>
+            {%- endif -%}
+        </li>
+        {% endfor -%}
+    </ul>
+        
+	</nav>
+</header>

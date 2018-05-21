@@ -1,0 +1,99 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- seo tags -->
+    {% seo %}
+
+    <!-- Google Analytics -->
+    {% if site.theme_settings.google_analytics %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    <script>
+      var initAnalytics = function() {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','{{ site.theme_settings.google_analytics }}');
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.theme_settings.google_analytics }}');
+      };
+      
+      if (window.location.host.toLowerCase()==="{{ site.theme_settings.google_analytics_track_domain }}") {
+        if (document.cookie.indexOf("{{ site.theme_settings.google_analytics_dev_cookie }}") === -1) {
+          initAnalytics();
+        }
+      } else if("{{ site.theme_settings.google_analytics_dev_debug_tracking }}" === "true") {
+        initAnalytics();
+      }
+    </script>
+    {% endif %}
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.theme_settings.favicon }}">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    {% if site.theme_settings.google_fonts %}
+    <link href="//fonts.googleapis.com/css?family={{ site.theme_settings.google_fonts }}" rel="stylesheet" type="text/css"> 
+    {% endif %}
+  
+    <!-- Alternative Languages for this page -->
+{%- comment %}
+ --
+ -- Find the language of the current page by looking at the path!
+ --
+{% endcomment -%}
+{%- assign curlang = site.defaultlang -%}
+{%- assign pathpieces = page.path | split: "/" -%}
+{%- if pathpieces[0] == '_pages' and (pathpieces | size) >= 3 -%}
+{%- assign curlang = pathpieces[1] -%}
+{%- endif %}
+
+{%- comment %}
+ --
+ -- Find all languages!
+ --
+{% endcomment -%}
+{%- assign pagepaths = site.pages | map: "path" -%}
+{%- assign languages = curlang -%}
+{%- assign languageswithpage = curlang -%}
+{%- for path in pagepaths -%}
+  {%- comment %} Make a ; separated string of all languages {% endcomment %}
+  {%- assign thispathsplit = path | split: "/" -%}
+  {%- assign thislang = thispathsplit[1] -%}
+  {%- assign languages = (languages | append:";" | append:thislang) -%}
+
+  {%- comment %} Check if the current page exists in the other language {% endcomment %}
+  {%- assign frompathpart = thispathsplit[0] | append:"/" | append: thispathsplit[1] | append: "/" -%}
+  {%- assign topathpart = thispathsplit[0] | append:"/" | append: curlang | append: "/" -%}
+  {%- assign pathifincurrentlang = path | replace_first:frompathpart,topathpart -%}
+  {%- if pathifincurrentlang == page.path -%}
+    {%- assign languageswithpage = (languageswithpage | append:";" | append:thislang) -%}
+  {%- endif -%}
+{%- endfor %}
+{%- assign languages = languages | split:";" | uniq | sort_natural -%}
+{%- assign languageswithpage = languageswithpage | split:";" | uniq | sort_natural -%}
+  
+{%- for lang in languageswithpage -%}
+  {%- if languageswithpage contains lang -%}
+    {%- assign partto = append:"/" | append: lang | append: "/" -%}
+    {%- assign partfrom = append:"/" | append: curlang | append: "/" -%}
+    {%- assign pathifincurrentlang = page.url | replace_first:partfrom,partto -%}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ pathifincurrentlang }}">
+  {%- endif -%}
+{% endfor -%}
+</head>

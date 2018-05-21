@@ -1,0 +1,15 @@
+{% capture blockcontent1 %}
+<block_set><instance x="192" y="117"><block type="math_random_int" id="*!(oAnvX{K8bbrCo+x7v"><value name="FROM"><block type="math_number" id="MpO489I^N@_9BD(:vJqs"><field name="NUM">1</field></block></value><value name="TO"><block type="math_number" id="d||Mh9:r8}?UAHKh9!}c"><field name="NUM">100</field></block></value></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="193" y="179"><block type="math_random_float" id="lpw_ghzs.EwG=*H=FxM8"></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-math {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="*!(oAnvX{K8bbrCo+x7v" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="lpw_ghzs.EwG=*H=FxM8" blockcontent=blockcontent2 %}
+</div>
+</div>

@@ -1,0 +1,9 @@
+{% capture blockcontent %}
+<block_set><instance x="235" y="109"><block type="unityScene_toscene" id="iOK/7mQgy0,6U|e^}k?0"><value name="SCENE"><block type="text" id=":B5mF!e,/nSx5-?!)8Z~"><field name="TEXT">gameover</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-other {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="iOK/7mQgy0,6U|e^}k?0" blockcontent=blockcontent %}
+</div>
+</div>

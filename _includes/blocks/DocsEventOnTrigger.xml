@@ -1,0 +1,7 @@
+{% capture blockcontent %}
+<block_set xmlversion=""><instance x="232" y="50"><block type="unityControls_classConfig" id="^wUb8KeeB(}%ur[k:5H6" intask="true" deletable="false"><mutation declare="false"></mutation></block></instance><instance x="231" y="129"><block type="unityEvents_trigger" id=";Jld,fSHQ{Ki~}udL*NM" intask="true"><mutation declare="false"></mutation><field name="STATE">Enter</field><field name="PHYSICS">2D</field></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-img blocks-section blocks-events {{include.align}}">
+{% include blocks/hatblock.html blockid=";Jld,fSHQ{Ki~}udL*NM" blockcontent=blockcontent %}
+</div>

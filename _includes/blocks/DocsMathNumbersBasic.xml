@@ -1,0 +1,51 @@
+{% capture blockcontent1 %}
+<block_set><instance x="193" y="103"><block type="math_number" id="7POLhxJ(04UA]6#lMHCc"><field name="NUM">0</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent2 %}
+<block_set><instance x="190" y="154"><block type="math_arithmetic" id="|=m#;8Wd7a4l*sK@jkjw"><field name="OP">ADD</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent3 %}
+<block_set><instance x="191" y="212"><block type="math_round" id="Q1DJPUXG9{sh}{d1b2(r"><field name="OP">ROUND</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent4 %}
+<block_set><instance x="187" y="256"><block type="math_single" id="*3X!Pmjj!kn|YHjQ{WP_"><field name="OP">ROOT</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent5 %}
+<block_set><instance x="191" y="299"><block type="math_single" id="tn}BK;cQW__.E+taW-8k"><field name="OP">NEG</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent6 %}
+<block_set><instance x="189" y="342"><block type="math_trig" id="/E{7ix_xXBnkKBqUZcnn"><field name="OP">SIN</field></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent7 %}
+<block_set><instance x="184" y="391"><block type="math_modulo" id="a0^-gp!nOo6_6Je*9[D:"></block></instance></block_set>
+{% endcapture %}
+{% capture blockcontent8 %}
+<block_set><instance x="183" y="450"><block type="math_constrain" id="H}f,)#PA=XiX{pVSP/4m"><value name="LOW"><block type="math_number" id="9!P2/IsI}+xj3r1]r4*H"><field name="NUM">1</field></block></value><value name="HIGH"><block type="math_number" id="_U6=|-xF_=m6lQvnd!:l"><field name="NUM">100</field></block></value></block></instance></block_set>
+{% endcapture %}
+
+<div class="blocks-section blocks-math {{include.align}}">
+<div class="blocks-img">
+{% include blocks/block.html blockid="7POLhxJ(04UA]6#lMHCc" blockcontent=blockcontent1 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="|=m#;8Wd7a4l*sK@jkjw" blockcontent=blockcontent2 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="Q1DJPUXG9{sh}{d1b2(r" blockcontent=blockcontent3 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="*3X!Pmjj!kn|YHjQ{WP_" blockcontent=blockcontent4 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="tn}BK;cQW__.E+taW-8k" blockcontent=blockcontent5 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="/E{7ix_xXBnkKBqUZcnn" blockcontent=blockcontent6 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="a0^-gp!nOo6_6Je*9[D:" blockcontent=blockcontent7 %}
+</div>
+<div class="blocks-img">
+{% include blocks/block.html blockid="H}f,)#PA=XiX{pVSP/4m" blockcontent=blockcontent8 %}
+</div>
+</div>
