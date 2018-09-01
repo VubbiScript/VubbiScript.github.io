@@ -9,6 +9,14 @@ lang: nl
 slug: docs
 ---
 
+### Versie 0.5.0 (01 sep 2018)
+
+  * Introductie van Engelse versie! Vubbi is vanaf nu beschikbaar in zowel Engels als Nederlands.
+  * Introductie van knopjes om de zichtbaarheid van geheugenvelden aan te passen. Zo kan je interne variablen verbergen in Unity.
+  * Herwerkte website. De website is nu tweetalig. (Ik ben nog bezig met een aantal pagina's te vertalen)
+  * Introductie van "enkel lezen" mode voor het weergeven van de blokjes in de documentatie op de website.
+  * Een aantal kleinere wijzigingen...
+
 ### Versie 0.4.1 (19 nov 2017)
 
   * Code in het "gegenereerde code" voorbeeld venster heeft nu ook kleurtjes.

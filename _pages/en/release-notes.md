@@ -3,12 +3,23 @@ author: jeroenpenninck
 comments: false
 date: 2017-05-12 19:59:07+00:00
 layout: page
-title: Roadmap
-description: What is still planned for Vubbi?
+title: Release notes and older versions
+description: What has changed in previous version of VubbiScript?
 lang: en
 slug: docs
 ---
 
-Uh! Oh! This page is not yet available in the English version of this site. I am working on it! 
+
+### Version 0.5.0 (01 sep 2018)
+
+  * Introducing English version! Vubbi is now available in both English and Dutch.
+  * Introduction of buttons to toggle the visibility of memory fields. With these buttons you can hide internal variables in Unity.
+  * Reworked website. The website is now available in two languages. (I am still working on some pages)
+  * Introduced "Read-only" mode to display the blocks in the documentation on the website.
+  * Some smaller changes...
+
+### Version 0.4.1 (19 nov 2017)
+
+Uh! Oh! Older content of this page is not yet available in the English version of this site. I am working on it! 
 
 You could check out the Dutch version instead by switching language in the menu.
