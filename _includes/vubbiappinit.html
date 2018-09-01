@@ -7,7 +7,20 @@
   }
 </style>
 <link rel="stylesheet/css" href="{{ site.baseurl }}/app_no_edit/app.css"/>
-<script>require(["app_no_edit/Main"], function(){});</script>
+{%- comment %}
+ --
+ -- Find the language of the current page by looking at the path!
+ --
+{% endcomment -%}
+{%- assign curlang = site.defaultlang -%}
+{%- assign pathpieces = page.path | split: "/" -%}
+{%- if pathpieces[0] == '_pages' and (pathpieces | size) >= 3 -%}
+{%- assign curlang = pathpieces[1] -%}
+{%- endif %}
+<script>
+window.vubbilang = "{{curlang}}";
+require(["app_no_edit/Main"], function(){});
+</script>
 
 <!-- Hide my e-mail for spam bots -->
 <script>
