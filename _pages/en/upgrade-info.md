@@ -20,12 +20,12 @@ To make sure you don't lose work (because I made a mistake) you can - before you
   2. Copy the full directory containing your Unity project to another location
   3. Open your project again
 
-## upgrade Vubbi
+## Upgrade Vubbi
 
 Upgrading Vubbi is easy, simply follow these steps:
 
   1. Make sure your project is saved (and that you have a backup if you don't want to lose your work if something goes wrong).
-  2. From inside Unity delete the folder "VubbiScript" in "Editor Default Resources/Editor".
+  2. From inside Unity delete the folder "VubbiScript" (folder can also be in "Editor Default Resources/Editor").
   3. Download a newer version of Vubbi and import it as usual.
   4. Restart Unity and re-open your project.
   5. If everything went fine you now have the new version of Vubbi.

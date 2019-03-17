@@ -26,7 +26,7 @@ Om te vermijden dat je werk verliest (doordat ik een fout gemaakt heb) kan je vo
 Simpel, volg volgende stappen:
 
   1. Zorg dat je project opgeslagen is (en je misschien een backup hebt).
-  2. Vanuit Unity verwijder de map "VubbiScript" onder "Editor Default Resources/Editor".
+  2. Vanuit Unity verwijder de map "VubbiScript" (de map kan ook zitten onder "Editor Default Resources/Editor")
   3. Download de nieuwe versie van Vubbi en importeer deze zoals normaal.
   4. Herstart Unity en open je project opnieuw.
   5. Als alles goed gegaan is heb je nu de nieuwe versie van Vubbi.
