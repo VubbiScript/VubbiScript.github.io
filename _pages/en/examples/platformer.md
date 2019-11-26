@@ -18,4 +18,4 @@ slug: examples
 	
   * Images and a level...
   * **But no scripts yet, so nothing works!** Ideal for trying out VubbiScript!
-  * VubbiScript 0.4.1 is installed
+  * VubbiScript 0.5.01 is installed

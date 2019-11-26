@@ -25,6 +25,7 @@ Asteroids is a game in space made with Unity3D and programmed with Vubbi blocks.
   * **lives & game over** = the space ship gets broken more and more every time it collides with an asteroid...
   * **animation** = the explosion that is shown when the spaceship explodes uses Unity animation.
   * **prefabs** = an object can be created once an re-used all the time (like asteroids and bullets)
+  * VubbiScript 0.5.01 is installed
 
 
 **Images** originate from: [Kenney](https://kenney.nl/assets?q=2d)

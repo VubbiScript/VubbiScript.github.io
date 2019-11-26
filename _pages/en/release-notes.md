@@ -9,6 +9,9 @@ lang: en
 slug: docs
 ---
 
+### Version 0.5.01 (26 nov 2019)
+
+  * Fixed issue where combining "wait" block and custom memory variables was producing wrong code
 
 ### Version 0.5.0 (01 sep 2018)
 

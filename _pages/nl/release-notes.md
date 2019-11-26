@@ -9,6 +9,10 @@ lang: nl
 slug: docs
 ---
 
+### Version 0.5.01 (26 nov 2019)
+
+  * Bugfix: combinatie van "wacht" blok en geheugen variablen gaf errors in de gegenereerde code
+
 ### Versie 0.5.0 (01 sep 2018)
 
   * Introductie van Engelse versie! Vubbi is vanaf nu beschikbaar in zowel Engels als Nederlands.

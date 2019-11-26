@@ -25,6 +25,7 @@ Asteroids is een ruimtespelletje gemaakt met Unity3D en geprogrammeerd met Vubbi
   * **leven & game over** = het ruimteschip gaat steeds meer kapot als het botst
   * **animatie** = de explosie als je ruimteschip ontploft maakt gebruik van Unity animatie.
   * **prefabs** = een object één keer maken en nadien hergebruiken (zoals de meteorieten & de kogels)
+  * VubbiScript 0.5.01 is geïnstalleerd
 
 
 **Afbeeldingen** komen van: [Kenney](https://kenney.nl/assets?q=2d)
