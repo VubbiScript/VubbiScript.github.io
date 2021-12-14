@@ -9,6 +9,11 @@ lang: en
 slug: docs
 ---
 
+### Version 0.5.02 (14 dev 2021)
+
+  * Upgrading project to Unity 2020.3.19f1
+  * Fixed issue where VubbiScript stops responding after saving the script once ([issue #18 on github](https://github.com/VubbiScript/VubbiScript/issues/18))
+
 ### Version 0.5.01 (26 nov 2019)
 
   * Fixed issue where combining "wait" block and custom memory variables was producing wrong code

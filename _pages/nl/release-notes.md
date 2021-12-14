@@ -9,6 +9,11 @@ lang: nl
 slug: docs
 ---
 
+### Version 0.5.02 (14 dec 2021)
+
+  * Overgeschakeld naar Unity versie 2020.3.19f1
+  * Bug gefixed waar VubbiScript stopt met werken nadat je een script eenmaal opgeslagen hebt ([issue #18 on github](https://github.com/VubbiScript/VubbiScript/issues/18))
+
 ### Version 0.5.01 (26 nov 2019)
 
   * Bugfix: combinatie van "wacht" blok en geheugen variablen gaf errors in de gegenereerde code

@@ -35,8 +35,8 @@ Zorg ervoor dat jouw Unity project geopend is. Unity zal dan automatisch vragen
 
 {% include util/downloadbtn.html
   label="Download Vubbi"
-  version="v0.5.01"
-  url="https://drive.google.com/uc?export=download&id=17ewgeExe5eWVuNuSAzd5Sx6k1T-iWOZz" %}
+  version="v0.5.02"
+  url="https://drive.google.com/uc?export=download&id=1EduHwM9s0mj3h6MnRo7s9nEnYePeEre1" %}
 
 De installatie is eenvoudig. Klik gewoon op "Import" nadat je het bestand geopend hebt.
 
